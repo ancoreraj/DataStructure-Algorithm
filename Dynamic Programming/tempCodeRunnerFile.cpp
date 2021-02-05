@@ -1,0 +1,1 @@
+sort(coins,coins+n);

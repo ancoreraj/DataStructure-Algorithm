@@ -1,0 +1,2 @@
+string fruit;
+    // cin>>fruit;
