@@ -70,6 +70,7 @@ void removeCycle(node*&head){
 
         if(fast == slow){
             slow = head;
+            break;
         }
     }
 
@@ -95,7 +96,7 @@ int main(){
     }
     printNode(head);
     
-    printNode(x);
+    // printNode(x);
 
 
 

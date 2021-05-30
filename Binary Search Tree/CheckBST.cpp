@@ -75,6 +75,10 @@ void bfsLevel(node*root){
     return;
 }
 
+// -Infinity <= root->data <= +Infinity
+// -Inf <= root->left->data <= root->data
+// root->data <= root->right->data <= +Inf
+
 bool isBST(node*root,int minV = INT_MIN, int maxV = INT_MAX){
     if(root==NULL){
         return true;

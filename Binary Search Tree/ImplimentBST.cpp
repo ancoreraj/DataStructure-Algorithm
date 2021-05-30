@@ -68,9 +68,7 @@ void bfsLevel(node*root){
             if(f->right){
                 q.push(f->right);
             }
-
         }
-        
     }
     return;
 }

@@ -28,7 +28,7 @@ class Graph{
         }
     }
 
-    void dfs(T src){
+    void dfs(){
         map<T,bool> visited;
         //Mark all the nodes as not visited in the Begining
         //This for each loop to iterate to all the nodes/keys of the map.
@@ -37,8 +37,19 @@ class Graph{
             //We are initializing all the nodes/keys to not visited
             visited[node] = false;
         }
-        //call the helper functiond
-        dfs_helper(src,visited);
+        //Iterate over all the vertices and initiate a dfs call if a verted is not visited
+        int cnt = 0;
+        for(auto p: l){
+            T node = p.first;
+            
+            if(!visited[node]){
+                cout<<"Component "<<cnt<<" -->";
+                dfs_helper(node,visited);
+                cnt++;
+                cout<<endl;
+            }
+            
+        }
     }
 
 
@@ -51,10 +62,13 @@ int main(){
     g.addEdge(1,2);
     g.addEdge(2,3);
     g.addEdge(0,3);
-    g.addEdge(3,4);
-    g.addEdge(4,5);
+    g.addEdge(0,4);
+    g.addEdge(5,6);
+    g.addEdge(6,7);
+    g.addEdge(8,8);
+    
 
-    g.dfs(0);
+    g.dfs();
 
 
     return 0;

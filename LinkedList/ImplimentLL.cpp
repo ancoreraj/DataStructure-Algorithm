@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 class node{
     public:
     int data;
@@ -20,7 +19,6 @@ int lengthOfNode(node* head){
         temp=temp->next;
 
     }
-
     return length;
 }
 
