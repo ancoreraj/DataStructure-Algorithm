@@ -50,10 +50,13 @@ void reverse(node* &head){
 
 //O(n)
 node* recReverseOn(node* head){
+    //If there is no head or only one head
     if(head==NULL || head->next==NULL){
         return head;
     }
     node* newHead = recReverseOn(head->next);
+    //head->next->next = head;
+    //head->next = NULL;
     node* temp = head->next;
     temp->next=head;
     head->next = NULL;
