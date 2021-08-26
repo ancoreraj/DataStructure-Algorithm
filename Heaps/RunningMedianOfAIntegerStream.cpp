@@ -25,7 +25,6 @@ int main(){
 
             }else{
                 rightHeap.push(d);
-            
             }
 
             med = (leftHeap.top()+rightHeap.top())/2.0;

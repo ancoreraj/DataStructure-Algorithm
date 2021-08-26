@@ -2,6 +2,7 @@
 using namespace std;
 
 typedef pair<int, pair<int , int>> node;
+//Node()
 
 vector<int> mergeKSortedArray(vector<vector<int>> arr){
     vector <int> result;

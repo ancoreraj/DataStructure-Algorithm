@@ -19,7 +19,6 @@ void buildHeap(vector<int> &v){
             swap(v[idx],v[parent]);
             idx = parent;
             parent = parent/2;
-
         }
     }
 }
