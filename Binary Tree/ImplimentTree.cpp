@@ -73,6 +73,15 @@ void printKthLevel(node*root,int k){
 
 }
 
+int height(node*root){
+    if(root==NULL){
+        return 0;
+    }
+    int ls = height(root->left);
+    int rs = height(root->right);
+
+    return max(ls,rs) + 1; 
+}
 void printAllLevels(node*root){
     int H = height(root);
 
@@ -84,15 +93,7 @@ void printAllLevels(node*root){
 
 }
 
-int height(node*root){
-    if(root==NULL){
-        return 0;
-    }
-    int ls = height(root->left);
-    int rs = height(root->right);
 
-    return max(ls,rs) + 1; 
-}
 
 int main(){
     node* root = buildTree();

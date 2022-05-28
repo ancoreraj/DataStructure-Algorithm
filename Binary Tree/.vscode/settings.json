@@ -1,9 +1,11 @@
 {
     "files.associations": {
+        "*.js": "javascriptreact",
         "iostream": "cpp",
         "array": "cpp",
         "any": "cpp",
         "string_view": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "ostream": "cpp"
     }
 }
